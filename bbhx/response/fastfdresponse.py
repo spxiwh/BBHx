@@ -28,6 +28,7 @@ except (ImportError, ModuleNotFoundError) as e:
 
 from pyResponse_cpu import LISA_response_wrap as LISA_response_wrap_cpu
 from bbhx.utils.constants import *
+from .slowpythonresponse import LISA_response as LISA_response_wrap_slow
 
 
 class LISATDIResponse:
@@ -120,6 +121,8 @@ class LISATDIResponse:
             (self.nparams * self.length * self.num_modes * self.num_bin_all),
             dtype=self.xp.float64,
         )
+        
+     
 
     @property
     def transferL1(self):
