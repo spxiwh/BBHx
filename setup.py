@@ -207,6 +207,7 @@ if "--no_omp" in sys.argv:
 else:
     use_omp = True
 
+exec(open('scripts/prebuild.py', 'r').read())
 
 # if installing for CUDA, build Cython extensions for gpu modules
 if run_cuda_install:
