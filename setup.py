@@ -282,6 +282,7 @@ cpu_extension = dict(
         "gcc": ["-std=c++11"],
     },  # '-g'],
     include_dirs=[numpy_include, "include"],
+    library_dirs=["lib"],
 )
 
 pyPhenomHM_cpu_ext = Extension(
