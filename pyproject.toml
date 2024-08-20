@@ -27,6 +27,7 @@ python = "*"
 [tool.cibuildwheel.linux]
 manylinux-x86_64-image = "manylinux2014"
 manylinux-aarch64-image = "manylinux2014"
+before-all = "yum install lapack-devel blas-devel"
 
 [tool.cibuildwheel.linux.environment]
 # /project will be the $PWD equivalent inside the docker used to build the wheel
