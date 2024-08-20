@@ -272,7 +272,7 @@ if run_cuda_install:
     # gpu_extensions.append(Extension(extension_name, **temp_dict))
 
 cpu_extension = dict(
-    libraries=["gsl", "gslcblas", "gomp", "lapack", "lapacke"],
+    libraries=["gsl", "gslcblas", "gomp", "lapack"],
     language="c++",
     # This syntax is specific to this build system
     # we're only going to use certain compiler args with nvcc
