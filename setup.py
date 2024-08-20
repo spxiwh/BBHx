@@ -3,7 +3,7 @@ import os
 import sys
 from os.path import join as pjoin
 from setuptools import setup
-from distutils.extension import Extension
+from setuptools import Extension
 from Cython.Distutils import build_ext
 import numpy
 import argparse
